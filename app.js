@@ -1,4 +1,4 @@
-function propina(cuenta, porcentaje) {
+function calcularPropina(cuenta, porcentaje) {
   return cuenta * porcentaje / 100;
 }
 
