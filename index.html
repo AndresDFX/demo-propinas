@@ -14,7 +14,7 @@
   <script src="https://js.sentry-cdn.com/60e9d3592192e8e2a797bd73cbafa473.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>Calculadora de propinas</h1>
+  <h1>Calculadora de propinas - PRUEBAS</h1>
   <label for="cuenta">Valor de la cuenta</label>
   <input id="cuenta" type="number" value="50000">
   <label for="propina">Porcentaje de propina</label>
@@ -28,5 +28,9 @@
   <button id="calcular">Calcular</button>
   <p id="resultado">Sin calcular</p>
   <script src="app.js"></script>
+  <button onclick="probarSentry()">Probar Sentry</button>
+  <script>
+    function probarSentry() { throw new Error("Prueba desde el ambiente de pruebas"); }
+  </script>
 </body>
 </html>
