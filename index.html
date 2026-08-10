@@ -4,14 +4,6 @@
   <meta charset="UTF-8">
   <title>Calculadora de propinas</title>
   <link rel="stylesheet" href="estilos.css">
-  <script>
-    window.sentryOnLoad = function () {
-      Sentry.init({
-        environment: location.hostname.includes("pruebas") ? "pruebas" : "produccion"
-      });
-    };
-  </script>
-  <script src="https://js.sentry-cdn.com/84ddcde1123aa41dbc6a8c9fb6bfa258.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <h1>Calculadora de propinas - PRUEBAS</h1>
@@ -28,9 +20,5 @@
   <button id="calcular">Calcular</button>
   <p id="resultado">Sin calcular</p>
   <script src="app.js"></script>
-  <button onclick="probarSentry()">Probar Sentry</button>
-  <script>
-    function probarSentry() { throw new Error("Prueba desde el ambiente de pruebas"); }
-  </script>
 </body>
 </html>
